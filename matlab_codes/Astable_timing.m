@@ -1,0 +1,7 @@
+C1 =1e-6 ;
+R1 =11036 ;
+R2 =1e6 ;
+
+T_HIGH = 0.693*(R1+R2)*C1
+T_LOW = 0.693*R2*C1
+PERIOD = T_HIGH + T_LOW
