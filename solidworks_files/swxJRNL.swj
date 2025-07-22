@@ -1,0 +1,111 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 10/20/21 by IDRISHAB
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = _
+Application.SldWorks
+
+Set Part = swApp.OpenDoc6("C:\Users\AUTOWORLD\Saved Games\Desktop\Desktop Contents\Documents\My Design\Object Dropping UAV\Solidworks\UAV.SLDASM", 2, 0, "", longstatus, longwarnings)
+swApp.ActivateDoc2 "UAV", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusx
+boolstatus = Part.Extension.SelectByID2("Main gear assembly-1@UAV", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Main gear assembly-1@UAV", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Main gear assembly-1@UAV", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ShowComponent2
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Nose gear-1@UAV", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ShowComponent2
+Part.ClearSelection2 True
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusx
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ShowNamedView2 "*Front", 1
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ShowNamedView2 "*Isometric", 7
+boolstatus = Part.Extension.InsertScene("\scenes\01 basic scenes\00 backdrop - grey with overhead light.p2s")
+boolstatus = Part.Extension.InsertScene("\scenes\01 basic scenes\55 rooftop.p2s")
+boolstatus = Part.Extension.InsertScene("\scenes\03 presentation scenes\urban05\55 urban05_background.p2s")
+boolstatus = Part.Extension.InsertScene("\scenes\01 basic scenes\55 rooftop.p2s")
+boolstatus = Part.Extension.InsertScene("\scenes\01 basic scenes\00 backdrop - grey with overhead light.p2s")
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.36366224087164012, 0.44005256837759532, 0.6956662629204442, False, 0, Nothing, 0)
+Part.ActivateSelectedFeature
+boolstatus = Part.Extension.SelectByID2("D6@Sketch3@Fuselage-1@UAV", "DIMENSION", 0.27327183275726186, 0.39521629523313084, 0.69585864073975601, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+' MSGBOX
+' Save changes to UAV?
+
+swApp.ExitApp
+End Sub
